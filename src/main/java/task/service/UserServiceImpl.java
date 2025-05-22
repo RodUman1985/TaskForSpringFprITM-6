@@ -32,13 +32,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
+
     public User save(User user) {
         return userDAO.save(user);
     }
 
     @Override
-    @Transactional
+
     public void deleteById(Long id) {
         userDAO.deleteById(id);
     }
